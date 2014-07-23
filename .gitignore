@@ -1,0 +1,36 @@
+## Build packages
+*.apk
+*.ap_
+
+## Dalvik files
+*.dex
+
+## Java class files
+*.class
+
+## Generated files
+bin/
+gen/
+build/
+
+## Local configs
+local.properties
+.idea/
+*.iml
+
+## Proguard folder
+proguard/
+
+## Gradle wrapper script and files
+gradlew*
+gradle/
+.gradle/
+
+## Dolphin's folder configs
+.directory
+
+## Don't share your keystore!
+keystore
+
+## File backups
+*~
