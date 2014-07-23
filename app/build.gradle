@@ -1,0 +1,93 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.+'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+//==============================================================================
+repositories {
+    //--------------------------------------------------------------------------
+    mavenCentral()
+    //--------------------------------------------------------------------------
+}
+//------------------------------------------------------------------------------
+
+//==============================================================================
+android {
+	//--------------------------------------------------------------------------
+	compileSdkVersion 20
+	buildToolsVersion '20.0.0'
+	
+	//--------------------------------------------------------------------------
+	
+	signingConfigs {
+		release {
+			storeFile file( '../keystore' )
+		}
+	}
+	
+	//--------------------------------------------------------------------------
+
+	buildTypes {
+		defaultConfig {
+            applicationId "net.mangajunkie"
+			minSdkVersion 14
+			targetSdkVersion 20
+		}
+		debug {
+			debuggable true
+			runProguard false
+			applicationIdSuffix '.debug'
+			versionNameSuffix '-debug'
+		}
+		release {
+			debuggable false
+			runProguard true
+			signingConfig signingConfigs.release
+			zipAlign true
+		}
+	}
+	
+	//--------------------------------------------------------------------------
+	
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_7
+		targetCompatibility JavaVersion.VERSION_1_7
+	}
+}
+//------------------------------------------------------------------------------
+
+//==============================================================================
+dependencies {
+    //--------------------------------------------------------------------------
+    compile 'com.android.support:support-v13:19.0.+'
+    compile 'com.f2prateek.progressbutton:progressbutton:1.0.2'
+    compile 'com.mcxiaoke.volley:library-aar:1.+'
+    compile 'com.intellij:annotations:+@jar'
+    //--------------------------------------------------------------------------
+}
+//------------------------------------------------------------------------------
+
+
+//==============================================================================
+// Prompt for keystore info
+//------------------------------------------------------------------------------
+
+gradle.taskGraph.whenReady { taskGraph ->
+    if( taskGraph.hasTask( ':app:assembleRelease' )) {
+        def storePass = new String( System.console().readPassword( "\nStore password: " ))
+        def keyAlias  = new String( System.console().readLine(     "\nKey alias: "      ))
+        def keyPass   = new String( System.console().readPassword( "\nKey password: "   ))
+
+        android.signingConfigs.release.storePassword = storePass
+        android.signingConfigs.release.keyAlias      = keyAlias
+        android.signingConfigs.release.keyPassword   = keyPass
+    }
+}
+
+//------------------------------------------------------------------------------

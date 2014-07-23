@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- =================================================================== -->
+	<!-- Common -->
+	<!-- =================================================================== -->
+	
+	<string name="app_name">Manga Junkie</string>
+	<string name="search_hint">Search Manga Junkie</string>
+	<string name="tryAgain">Try again</string>
+	<string name="settings">Settings</string>
+	
+	<!-- =================================================================== -->
+	<!-- Drawer -->
+	<!-- =================================================================== -->
+	
+	<string name="drawer_open">Open drawer</string>
+	<string name="drawer_close">Close drawer</string>
+	
+	<!-- =================================================================== -->
+	<!-- Navigation menu titles -->
+	<!-- =================================================================== -->
+	
+	<string name="navItem_allBookmarks">All Bookmarks</string>
+	
+	<!-- =================================================================== -->
+	<!-- Action bar items -->
+	<!-- =================================================================== -->
+	
+	<string name="action_brightness">Brightness</string>
+	<string name="action_eraseCollection">Erase collection</string>
+	
+	<!-- =================================================================== -->
+	<!-- Dialogs -->
+	<!-- =================================================================== -->
+	
+	<string name="dialog_button_negative">Cancel</string>
+	
+	<string name="dialog_title_eraseCollection">Erase bookmark collection?</string>
+	<string name="dialog_message_eraseCollection">If collection sync is enabled, your bookmarks will be erased on other devices as well.</string>
+	<string name="dialog_button_positive_eraseCollection">Erase</string>
+	
+	<string name="dialog_checkBox_useSystemBrightness">Use system brightness</string>
+	
+	<!-- =================================================================== -->
+	<!-- Context menus -->
+	<!-- =================================================================== -->
+	
+	<string name="context_removeBookmark">Remove bookmark</string>
+	<string name="context_removeBookmark_condensed">Remove</string>
+	
+	<string name="context_pin">Keep on device</string>
+	<string name="context_pin_condensed">Pin</string>
+	
+	<!-- =================================================================== -->
+	<!-- Notices -->
+	<!-- =================================================================== -->
+	
+	<string name="notice_fetchingLibrary">Getting some data.\nOne moment…</string>
+	<string name="notice_fetchingLibraryFailed">Manga Junkie needs to get a list of manga.\n(Just once!)</string>
+	<string name="notice_fetchingLibraryFailed_header">No Internet?</string>
+	
+	<string name="notice_collectionEmpty">Manga Junkie will automatically\nkeep track of what you\'re reading\nand show it here.</string>
+	<string name="notice_collectionEmpty_header">No Manga</string>
+	
+	<string name="notice_wrongWay">Manga are traditionally read from right to left.\nPlease swipe the other direction to continue reading.</string>
+	<string name="notice_nextChapter">Next\nChapter</string>
+	
+	<string name="notice_accountSync_empty">Enable Account Sync to see a list of accounts.</string>
+	
+	<string name="notice_pageLoadFailed">Couldn\'t load this page</string>
+	
+	<string name="notice_mangaBroken_header">This series is marked as "broken"</string>
+	<string name="notice_mangaBroken">The server doesn\'t have any chapters.\nFuture updates will allow users\nto upload their own.</string>
+	
+	<!-- =================================================================== -->
+	<!-- Buttons -->
+	<!-- =================================================================== -->
+	
+	<string name="button_fetchingLibraryRetry">@string/tryAgain</string>
+	<string name="button_pageLoadRetry">@string/tryAgain</string>
+	
+	<!-- =================================================================== -->
+	<!-- Banners -->
+	<!-- =================================================================== -->
+	
+	<string name="banner_accountSync">Collection syncing with </string>
+	
+	<!-- =================================================================== -->
+	<!-- Preferences -->
+	<!-- =================================================================== -->
+	
+	<string name="preference_title_accountSync">Collection sync</string>
+	<string name="preference_summary_accountSync">Share bookmarks between devices</string>
+	
+	<string name="preference_title_accountSync_user">Sync with account</string>
+	
+	<string name="preference_title_notifications">Notifications</string>
+	
+	<string name="preference_title_notificationSound">New chapter sound</string>
+	
+	<string name="preference_title_pageNumberVisibility">Show page numbers</string>
+	<string-array name="preference_entries_pageNumberVisibility">
+		<item>Never</item>
+		<item>When not in fullscreen</item>
+		<item>When page changes</item>
+	</string-array>
+	<string-array name="preference_entryValues_pageNumberVisibility">
+		<item>hidden</item>
+		<item>hiddenInFullscreen</item>
+		<item>shown</item>
+	</string-array>
+	
+	<!-- =================================================================== -->
+	<!-- Relative chapter navigation -->
+	<!-- =================================================================== -->
+	
+	<string name="nextChapter">Next chapter</string>
+	<string name="previousChapter">Previous chapter</string>
+	
+	<string name="topChapter">@string/previousChapter</string>
+	<string name="bottomChapter">@string/nextChapter</string>
+	<string name="rightChapter">@string/previousChapter</string>
+	<string name="leftChapter">@string/nextChapter</string>
+	
+	<string name="button_previousChapter">@string/previousChapter</string>
+	
+</resources>

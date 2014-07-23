@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" tools:context=".activity.HomeActivity">
+	
+	<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/list"
+		
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		
+		android:paddingLeft="@dimen/listView_sidePadding"
+		android:paddingRight="@dimen/listView_sidePadding"
+		android:paddingTop="@dimen/listView_topPadding"
+		android:paddingBottom="@dimen/listView_bottomPadding"
+		
+		android:scrollbarStyle="outsideOverlay"
+		android:clipToPadding="false"
+		android:listSelector="@android:color/transparent"
+		
+		android:divider="@null"
+		android:dividerHeight="@dimen/listView_dividerHeight"
+		
+		tools:listitem="@layout/listitem_search" />
+	
+	<ProgressBar
+		android:id="@+id/progress"
+		
+		android:layout_width="32dip"
+		android:layout_height="32dip"
+		android:layout_gravity="center"
+		android:visibility="gone" />
+	
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 7" tablet dimensions, landscape -->
+<resources>
+    
+	<!-- Side padding -->
+	<dimen name="listView_sidePadding"> 64dip </dimen>
+	<dimen name="gridView_sidePadding"> 96dip </dimen>
+    
+    <!-- Banner -->
+    <dimen name="banner_padding"> 8dip </dimen>
+    
+</resources>

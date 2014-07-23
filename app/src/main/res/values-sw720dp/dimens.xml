@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 10" tablet dimensions -->
+<resources>
+	
+    <!-- Cover grid -->
+    <dimen name="gridItem_cover_width">  200dip </dimen>
+    <dimen name="gridItem_cover_height"> 300dip </dimen>
+    
+	<!-- Side padding -->
+	<dimen name="gridView_sidePadding"> 48dip </dimen>
+    
+</resources>

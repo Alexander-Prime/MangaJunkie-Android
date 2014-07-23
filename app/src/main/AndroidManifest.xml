@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ======================================================================= -->
+	
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="net.mangajunkie"
+	android:versionCode="020017"
+	android:versionName="2.0.17">
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	
+	<supports-screens
+	    android:smallScreens="false" 
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:xlargeScreens="true"
+		android:anyDensity="true"/>
+
+	<!-- =================================================================== -->
+	
+	<application
+		android:icon="@drawable/ic_logo"
+		android:label="@string/app_name"
+		android:theme="@style/Theme.Junkie"
+		android:name=".android.app.App"
+		android:allowBackup="true">
+		
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		
+		<activity
+			android:name=".android.activity.HomeActivity"
+			android:launchMode="singleTop">
+			
+			<intent-filter android:label="@string/app_name">
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			
+		</activity>
+		
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		
+		<activity android:name=".android.activity.MangaActivity" />
+		
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		
+		<activity
+		    android:name=".android.activity.ChapterActivity"
+		    android:theme="@style/Theme.Junkie.Chapter" />
+		
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		
+		<activity android:name=".android.activity.PrefsActivity"
+		          android:theme="@android:style/Theme.Holo.Light"
+		          android:parentActivityName=".android.activity.HomeActivity"
+		          android:label="@string/settings">
+			<intent-filter>
+				<category android:name="android.intent.category.PREFERENCE" />
+			</intent-filter>		
+		</activity>
+		
+		<!--=================================================================-->
+		<!-- Services -->
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		
+		<service android:name=".android.service.PinService"
+			     android:exported="false">
+			<intent-filter>
+				<action android:name="net.mangajunkie.action.NOTIFY_PIN_CHANGED" />
+				<action android:name="net.mangajunkie.action.REQUEST_PIN_PROGRESS" />
+			</intent-filter>
+		</service>
+		
+		<service android:name=".android.service.PrefetchService"
+		         android:exported="false">
+			<intent-filter>
+				<action android:name="net.mangajunkie.action.NOTIFY_BOOKMARKS_CHANGED" />
+			</intent-filter>
+		</service>
+		
+		<!--=================================================================-->
+		<!-- BroadcastReceivers -->
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		
+		<receiver android:name=".android.receiver.CollectionSyncReceiver" android:exported="false">
+			<intent-filter>
+				<action android:name="net.mangajunkie.action.SYNC_COLLECTION" />
+			</intent-filter>
+		</receiver>
+		
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+		
+		<receiver android:name=".android.receiver.MangaUpdateReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="net.mangajunkie.action.PERFORM_MANGA_UPDATE" />
+				<action android:name="net.mangajunkie.action.NOTIFY_MANGA_UPDATED" />
+			</intent-filter>
+		</receiver>
+		
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	</application>
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+</manifest>

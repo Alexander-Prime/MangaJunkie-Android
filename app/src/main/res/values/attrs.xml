@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="TokenTagView">
+		<attr name="includeBackground" format="reference" />
+		<attr name="excludeBackground" format="reference" />
+		<attr name="includeTextColor"  format="color"     />
+		<attr name="excludeTextColor"  format="color"     />
+	</declare-styleable>
+</resources>

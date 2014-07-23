@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item
+	    android:id="@+id/sort_ascending"
+	    android:showAsAction="never"
+	    android:title="Sort ascending"
+	    android:titleCondensed="Ascending"
+	    android:icon="@drawable/ic_action_sort_ascending" />
+	
+	<item
+	    android:id="@+id/sort_descending"
+	    android:showAsAction="never"
+	    android:title="Sort descending"
+	    android:titleCondensed="Descending"
+	    android:icon="@drawable/ic_action_sort_descending" />
+	
+	<item
+		android:id="@+id/settings"
+		android:showAsAction="never"
+		android:title="@string/settings"
+		android:titleCondensed="@string/settings" />
+	
+</menu>

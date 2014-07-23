@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default (handset) dimensions -->
+<resources>
+    
+    <!-- Font sizes -->
+	<dimen name="textSize_xLarge" >22sp</dimen>
+	<dimen name="textSize_large"  >18sp</dimen>
+	<dimen name="textSize_medium" >16sp</dimen>
+	<dimen name="textSize_small"  >14sp</dimen>
+	<dimen name="textSize_xSmall" >12sp</dimen>
+	
+	<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	
+    
+	<!-- Navigation drawer -->
+	<dimen name="drawer_width"> 240dip </dimen>
+	
+    <dimen name="listItem_nav_height">            56dip </dimen>
+	<dimen name="listItem_nav_horizontalPadding"> 16dip </dimen>
+    
+    <!-- Cover grid -->
+    <dimen name="gridItem_cover_width">  160dip </dimen>
+    <dimen name="gridItem_cover_height"> 240dip </dimen>
+	
+	<!-- Search list -->
+	<dimen name="listItem_search_coverWidth">  64dip </dimen>
+	<dimen name="listItem_search_coverHeight"> 96dip </dimen>
+    
+    <!-- List/grid views -->
+	<dimen name="listView_sidePadding">   8dip </dimen>
+	<dimen name="listView_topPadding">    8dip </dimen>
+	<dimen name="listView_bottomPadding"> 8dip </dimen>
+	<dimen name="listView_dividerHeight"> 6dip </dimen>
+	
+	<dimen name="gridView_sidePadding">   8dip </dimen>
+	<dimen name="gridView_topPadding">    8dip </dimen>
+	<dimen name="gridView_bottomPadding"> 8dip </dimen>
+	
+	<dimen name="gridView_horizontalSpacing"> 8dip </dimen>
+	<dimen name="gridView_verticalSpacing">   6dip </dimen>
+    
+    <!-- List items -->
+    <dimen name="listItem_minHeight"> 48dip </dimen>
+    
+    <!-- Info header -->
+    <dimen name="info_coverWidth">    96dip </dimen>
+    <dimen name="info_coverHeight">  128dip </dimen>
+    <dimen name="info_summaryMargin">  8dip </dimen>
+	<dimen name="info_summaryPadding"> 8dip </dimen>
+	<dimen name="info_topPadding">     8dip </dimen>
+	<dimen name="info_sidePadding">    8dip </dimen>
+	
+	<dimen name="infoItem_leftMargin"> 8dip </dimen>
+    
+    <!-- Notice -->
+	<dimen name="noticeHeader_verticalPadding">8dip</dimen>
+	<dimen name="notice_verticalPadding">8dip</dimen>
+    <dimen name="notice_width"> 300dip </dimen>
+    
+    <!-- Banner -->
+    <dimen name="banner_margin">   0dip </dimen>
+    <dimen name="banner_padding">  8dip </dimen>
+	
+	<!-- Pull indicator -->
+	<dimen name="pullIndicator_thickness"> 4dip </dimen>
+	<dimen name="pullText_padding">20dip</dimen>
+	
+	<!-- Copied from ProgressButton, because Gradle is horseshit -->
+	<dimen name="progress_inner_size">28dp</dimen>
+    
+</resources>

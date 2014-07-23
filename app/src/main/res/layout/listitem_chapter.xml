@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	
+	android:orientation="horizontal"
+	android:gravity="fill_horizontal|center_vertical"
+	android:minHeight="@dimen/listItem_minHeight">
+	
+    <TextView
+        android:id="@+id/chapter"
+        
+        style="@style/listItem_chapter_number"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dip"
+	    
+        android:paddingLeft="@dimen/info_sidePadding"
+        
+	    tools:text="1" />
+    
+	<TextView
+		android:id="@+id/title"
+		
+		style="@style/listItem_chapter_title"
+		
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+		
+		tools:text="Chapter Title, future story of rhythm alien extended director's cut platinum" />
+	
+	<ImageView
+		android:id="@+id/pin"
+		
+	    android:layout_width="16dip"
+	    android:layout_height="16dip"
+	    
+	    android:src="@drawable/ic_pinned"
+	    
+		android:visibility="visible" />
+	
+	<ImageView
+		android:id="@+id/menu"
+        
+        style="@style/listItem_chapter_menuButton"
+        
+        android:layout_width="48dip"
+        android:layout_height="48dip" />
+		
+</LinearLayout>

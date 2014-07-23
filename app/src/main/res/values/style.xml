@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" tools:ignore="NewApi">
+
+	<!-- =================================================================== -->
+	<!-- Common -->
+	<!-- =================================================================== -->
+	
+	<style name="common_title">
+		<item name="android:fontFamily">sans-serif-light</item>
+	</style>
+	
+	<style name="common_details">
+		<item name="android:fontFamily">sans-serif-condensed</item>
+		<item name="android:textColor">@color/text_lighter</item>
+		
+	</style>
+	
+	<style name="common_tags" parent="common_details">
+		<item name="android:textAllCaps">true</item>
+	</style>
+	
+	<style name="common_menuButton">
+		<item name="android:clickable">true</item>
+		<item name="android:src">@drawable/ic_menu_small</item>
+		<item name="android:scaleType">center</item>
+		<item name="android:background">?android:attr/selectableItemBackground</item>
+	</style>
+	
+	<!-- =================================================================== -->
+	<!-- Info header -->
+	<!-- =================================================================== -->
+	
+	<style name="info_primary">
+		<item name="android:textColor">@color/text_accent</item>
+		<item name="android:textSize">@dimen/textSize_xLarge</item>
+		<item name="android:fontFamily">sans-serif-light</item>
+	</style>
+	
+	<style name="info_secondary">
+		<item name="android:textColor">@color/text_light</item>
+		<item name="android:textSize">@dimen/textSize_medium</item>
+	</style>
+	
+	<style name="info_tags" parent="common_tags">
+		<item name="android:textSize">@dimen/textSize_small</item>
+	</style>
+	
+	<style name="info_paragraphHeader">
+		<item name="android:textSize">@dimen/textSize_medium</item>
+		<item name="android:textColor">@color/text_dark</item>
+		<item name="android:textAllCaps">false</item>
+		<item name="android:paddingBottom">8dip</item>
+		<item name="android:fontFamily">sans-serif-light</item>
+	</style>
+	
+	<style name="info_paragraph">
+		<item name="android:lineSpacingMultiplier">1.2</item>
+		<item name="android:textSize">@dimen/textSize_small</item>
+		<item name="android:textColor">@color/text_light</item>
+	</style>
+	
+	<!-- =================================================================== -->
+	<!-- Grid items -->
+	<!-- =================================================================== -->
+	
+	<style name="gridItem_card_placeholder">
+		<item name="android:paddingLeft">   8dip </item>
+		<item name="android:paddingTop">   16dip </item>
+		<item name="android:paddingRight">  8dip </item>
+		<item name="android:paddingBottom"> 8dip </item>
+		
+		<item name="android:fontFamily" >sans-serif-light</item>
+		<item name="android:textSize">@dimen/textSize_medium</item>
+		<item name="android:textStyle">italic</item>
+		<item name="android:textColor">@color/gridItem_card_label_textColor</item>
+	</style>
+	
+	<!-- =================================================================== -->
+	<!-- List items -->
+	<!-- =================================================================== -->
+	
+	<!-- Common -->
+	
+	<style name="listItem_title" parent="common_title">
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">@dimen/textSize_medium</item>
+	</style>
+	
+	<style name="listItem_details" parent="common_details">
+		<item name="android:singleLine">true</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">@dimen/textSize_small</item>
+	</style>
+	
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<!-- Navigation list -->
+	
+	<style name="listItem_nav">
+		<item name="android:background">?android:attr/listChoiceBackgroundIndicator</item>
+		<item name="android:paddingLeft">@dimen/listItem_nav_horizontalPadding</item>
+		<item name="android:paddingRight">@dimen/listItem_nav_horizontalPadding</item>
+        <item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">22sp</item>
+		<item name="android:fontFamily">sans-serif-light</item>
+		<item name="android:textColor">@color/text_dark</item>
+	</style>
+	
+	<style name="listItem_nav_selected" parent="listItem_nav">
+		<item name="android:fontFamily">sans-serif</item>
+	</style>
+	
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<!-- Bookmark link -->
+	
+	<style name="listItem_bookmark_number">
+	</style>
+	
+	<style name="listItem_bookmark_title" parent="listItem_title">
+		<item name="android:textColor">@color/text_dark</item>
+	</style>
+	
+	<style name="listItem_bookmark_page" parent="listItem_details">
+	</style>
+	
+	<style name="listItem_bookmark_menuButton" parent="common_menuButton">
+	</style>
+	
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<!-- Chapter list -->
+	
+	<style name="listItem_chapter_number">
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">@dimen/textSize_medium</item>
+		<item name="android:typeface">monospace</item>
+		<item name="android:textColor">@color/text_dark</item>
+	</style>
+	
+	<style name="listItem_chapter_title" parent="listItem_title">
+		<item name="android:textColor">@color/text_dark</item>
+	</style>
+	
+	<style name="listItem_chapter_menuButton" parent="common_menuButton">
+	</style>
+	
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<!-- Search results -->
+	
+	<style name="listItem_search_title" parent="listItem_title">
+		<item name="android:textColor">@color/text_dark</item>
+	</style>
+	
+	<style name="listItem_search_author">
+		<item name="android:singleLine">true</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">@dimen/textSize_medium</item>
+		<item name="android:textColor">@color/text_light</item>
+	</style>
+	
+	<style name="listItem_search_tags" parent="common_tags">
+		<item name="android:singleLine">true</item>
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">@dimen/textSize_small</item>
+	</style>
+	
+	<!-- =================================================================== -->
+	<!-- Custom elements -->
+	<!-- =================================================================== -->
+	
+	<style name="noticeHeader">
+		<item name="android:textColor">@color/text_dark</item>
+		<item name="android:textSize">@dimen/textSize_xLarge</item>
+		<item name="android:gravity">center</item>
+		<item name="android:paddingBottom">@dimen/noticeHeader_verticalPadding</item>
+	</style>
+	
+	<style name="notice">
+		<item name="android:textColor">@color/text_light</item>
+		<item name="android:textStyle">italic</item>
+		<item name="android:textSize">@dimen/textSize_medium</item>
+		<item name="android:gravity">center</item>
+		<item name="android:paddingBottom">@dimen/notice_verticalPadding</item>
+	</style>
+	
+	<style name="placeholder">
+		<item name="android:textColor">@color/text_lighter</item>
+		<item name="android:textSize">@dimen/textSize_medium</item>
+		<item name="android:gravity">center</item>
+		<item name="android:paddingBottom">@dimen/notice_verticalPadding</item>
+	</style>
+	
+	<style name="pullText">
+		<item name="android:textSize">@dimen/textSize_xLarge</item>
+		<item name="android:textColor">@color/text_darker</item>
+		<item name="android:padding">@dimen/pullText_padding</item>
+		<item name="android:shadowColor">#fff</item>
+	</style>
+	
+	<style name="pageNumber">
+		<item name="android:paddingTop">8dip</item>
+		<item name="android:paddingBottom">8dip</item>
+		<item name="android:paddingLeft">16dip</item>
+		<item name="android:paddingRight">16dip</item>
+		<item name="android:alpha">0</item>
+		<item name="android:textSize">@dimen/textSize_large</item>
+		<item name="android:textColor">@color/text_white</item>
+		<item name="android:background">@drawable/bkg_pagenumber</item>
+	</style>
+	
+	<!-- =================================================================== -->
+	
+	<!-- =================================================================== -->
+	<!-- Customized library components -->
+	<!-- =================================================================== -->
+	
+	<style name="ProgressButton.Styled" parent="ProgressButton.Pin">
+	    <item name="circleColor">#10000000</item>
+	    <item name="progressColor">@color/accent</item>
+    </style>
+
+</resources>

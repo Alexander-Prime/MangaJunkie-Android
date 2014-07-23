@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/card_frame">
+	
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/info_coverHeight"
+	    android:layout_marginTop="@dimen/info_topPadding"
+	
+	    android:paddingLeft="@dimen/info_sidePadding"
+	   	android:paddingRight="@dimen/info_sidePadding">
+		
+		
+		<ImageView
+		    android:id="@+id/cover"
+			
+		    android:layout_width="@dimen/info_coverWidth"
+			android:layout_height="@dimen/info_coverHeight"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			
+			android:adjustViewBounds="true"
+			android:scaleType="centerCrop"
+			
+			android:src="@drawable/bkg_cover"
+			
+			tools:src="@drawable/ic_logo"
+			tools:background="#fcd"/>
+		
+		<TextView
+		    android:id="@+id/title"
+			style="@style/info_primary"
+			
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/infoItem_leftMargin"
+			android:layout_toRightOf="@id/cover"
+			android:layout_alignParentTop="true"
+			
+			tools:text="Title" />
+		
+		<TextView
+		    android:id="@+id/author"
+			style="@style/info_secondary"
+			
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/infoItem_leftMargin"
+			android:layout_toRightOf="@id/cover"
+			android:layout_below="@id/title"
+			
+			tools:text="by Author" />
+		
+		<ImageView
+			android:id="@+id/divider"
+		    
+			android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    
+		    android:layout_toRightOf="@id/cover"
+		    android:layout_alignParentRight="true"
+		    android:layout_below="@id/author"
+			
+		    android:src="@drawable/divider_info" />
+		
+		<TextView
+			android:id="@+id/tags"
+		    style="@style/info_tags"
+		    
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="@dimen/infoItem_leftMargin"
+		    android:layout_toRightOf="@id/cover"
+		    android:layout_below="@id/divider"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignParentBottom="true"
+			
+		    android:gravity="left|center_vertical"
+		    
+			tools:text="Shounen, Drama, Suspense"/>
+		
+		<!--com.f2prateek.progressbutton.ProgressButton
+			android:id="@+id/progress"
+			
+			style="@style/ProgressButton.Styled"
+	        
+	        android:layout_width="48dip"
+	        android:layout_height="match_parent"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_above="@id/divider"
+			android:clickable="true" /-->
+		
+	</RelativeLayout>
+	
+	<LinearLayout
+		android:id="@+id/summary_wrapper"
+		
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/info_summaryMargin"
+	
+	    android:paddingTop="@dimen/info_summaryPadding"
+	    android:paddingLeft="@dimen/info_sidePadding"
+	   	android:paddingRight="@dimen/info_sidePadding"
+	    
+	    android:orientation="vertical"
+	    
+		android:background="@drawable/bkg_carditem">
+		
+		<TextView
+			style="@style/info_paragraphHeader"
+			android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+			
+			android:text="Summary"/>
+		
+		<TextView
+			android:id="@+id/summary"
+			style="@style/info_paragraph"
+			
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:maxLines="3"
+			
+			tools:text="@string/notice_mangaBroken" />
+		
+		<ImageView
+			android:id="@+id/summary_moreless"
+			android:layout_width="32dip"
+			android:layout_height="32dip"
+			android:layout_gravity="right"
+			
+			android:scaleType="center"
+			
+			android:src="@drawable/ic_more"/>
+		
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/bookmark_wrapper"
+		
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	
+		android:orientation="horizontal"
+		android:gravity="fill_horizontal|center_vertical"
+		android:minHeight="@dimen/listItem_minHeight"
+		
+		android:paddingLeft="@dimen/info_sidePadding"
+		android:visibility="gone"
+		android:background="@drawable/bkg_carditem"
+		
+		tools:visibility="visible">
+		
+	    <ImageView
+	        android:id="@+id/bookmark_chapter"
+	        
+	        style="@style/listItem_bookmark_number"
+	        
+	        android:layout_width="32dip"
+	        android:layout_height="32dip"
+	        android:layout_marginRight="8dip"
+	        
+		    tools:src="@drawable/ic_logo"
+		    tools:background="#fcd"/>
+		
+		<LinearLayout
+			android:layout_width="0dip"
+		    android:layout_height="wrap_content"
+			android:layout_weight="1">
+		
+			<TextView
+				android:id="@+id/bookmark_title"
+				
+				style="@style/listItem_bookmark_title"
+				
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				
+		        android:layout_marginLeft="8dip"
+		        android:layout_marginRight="8dip"
+				
+				tools:text="Chapter Title" />
+			
+			<TextView
+				android:id="@+id/bookmark_page"
+			    
+			    style="@style/listItem_bookmark_page"
+			    
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+				
+				tools:text="page 12"/>
+			
+		</LinearLayout>
+		
+		<ImageView
+			android:id="@+id/bookmark_menu"
+	        
+	        style="@style/listItem_bookmark_menuButton"
+	        
+	        android:layout_width="48dip"
+	        android:layout_height="48dip"/>
+			
+	</LinearLayout>
+	
+</LinearLayout>

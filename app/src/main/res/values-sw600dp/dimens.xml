@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 7" tablet dimensions -->
+<resources>
+	
+    <!-- Font sizes -->
+	<dimen name="textSize_xLarge"> 28sp </dimen>
+	<dimen name="textSize_large">  22sp </dimen>
+	<dimen name="textSize_medium"> 18sp </dimen>
+	<dimen name="textSize_small">  14sp </dimen>
+    
+	<!-- Navigation drawer -->    
+	<dimen name="drawer_width"> 320dip </dimen>
+	
+    <!-- Cover grid -->
+    <dimen name="gridItem_cover_width">  180dip </dimen>
+    <dimen name="gridItem_cover_height"> 270dip </dimen>
+    
+    <!-- Notice -->
+    <dimen name="notice_width"> 400dip </dimen>
+    
+</resources>

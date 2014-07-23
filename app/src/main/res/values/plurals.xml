@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<plurals name="chapters">
+	    <item quantity="one">chapter</item>
+	    <item quantity="other">chapters</item>
+	</plurals>
+	
+	<plurals name="authors">
+	    <item quantity="one">author</item>
+	    <item quantity="other">authors</item>
+	</plurals>
+	
+	<plurals name="bookmarks">
+	    <item quantity="one">bookmark</item>
+	    <item quantity="other">bookmarks</item>
+	</plurals>
+	
+</resources>

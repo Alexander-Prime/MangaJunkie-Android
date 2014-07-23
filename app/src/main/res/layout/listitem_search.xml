@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:minHeight="@dimen/listItem_minHeight"
+	
+	android:background="@drawable/card_frame"
+	
+	tools:layout_marginLeft="@dimen/listView_sidePadding"
+	tools:layout_marginRight="@dimen/listView_sidePadding"
+	tools:layout_marginTop="@dimen/listView_topPadding"
+	tools:layout_marginBottom="@dimen/listView_bottomPadding">
+    
+	<FrameLayout
+		android:id="@+id/cover_wrapper"
+		android:layout_width="@dimen/listItem_search_coverWidth"
+		android:layout_height="@dimen/listItem_search_coverHeight"
+		android:layout_alignParentLeft="true"
+		android:layout_marginRight="8dip">
+		
+		<ImageView
+			android:id="@+id/cover"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			
+			android:scaleType="centerCrop"
+			
+			tools:background="#fcd"
+			tools:src="@drawable/ic_logo"/>
+		
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			
+		    android:background="@drawable/bkg_selectableitem" />
+		
+	</FrameLayout>
+	
+	<TextView
+		android:id="@+id/title"
+		
+		style="@style/listItem_chapter_title"
+	    
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/cover_wrapper"
+		android:layout_alignParentTop="true"
+		
+		android:textSize="@dimen/textSize_large"
+		
+		tools:text="Manga Title" />
+	
+	<TextView
+		android:id="@+id/author"
+		
+		style="@style/listItem_search_author"
+		
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/cover_wrapper"
+        android:layout_below="@id/title"
+		
+		tools:text="by Author" />
+	
+	<TextView
+		android:id="@+id/tags"
+		
+		style="@style/listItem_search_tags"
+		
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/cover_wrapper"
+		android:layout_below="@id/author"
+		
+		tools:text="list, of tags in, no particular, order" />
+		
+</RelativeLayout>

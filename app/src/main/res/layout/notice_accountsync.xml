@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/banner_accountSync"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/banner_margin"
+	android:padding="@dimen/banner_padding"
+	android:background="@drawable/bkg_notice"
+	android:gravity="center">
+	
+	<TextView
+		android:id="@+id/banner_accountSync_text"
+		android:layout_width="0dip"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_marginLeft="@dimen/banner_padding"
+		android:textColor="@color/text_dark"
+		android:text="@string/banner_accountSync"/>
+	
+	<Button
+		android:id="@+id/banner_accountSync_button_settings"
+		style="?android:attr/buttonStyleSmall"
+		android:layout_width="wrap_content"
+		android:layout_height="48dip"
+		android:text="Settings"/>
+	
+	<ImageButton
+		android:id="@+id/banner_accountSync_button_remove"
+		android:layout_width="48dip"
+		android:layout_height="48dip"
+		android:background="?android:attr/selectableItemBackground"
+		android:src="@drawable/ic_action_remove"
+		android:contentDescription="Hide notice" />
+	
+</LinearLayout>

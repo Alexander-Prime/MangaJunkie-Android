@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="16dip"
+	android:paddingRight="16dip">
+	
+	<TextView
+		android:id="@+id/notice_wrongway"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:gravity="center"
+		android:padding="16dip"
+		android:textSize="18sp"
+		android:text="@string/notice_wrongWay" />
+	
+	
+	<Button
+	    style="?android:attr/buttonStyle"
+	    android:id="@+id/previous"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:text="@string/button_previousChapter" />
+	
+</RelativeLayout>

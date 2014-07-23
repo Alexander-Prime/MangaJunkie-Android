@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default (handset) dimensions -->
+<resources>
+    
+	<!-- =================================================================== -->
+	<!-- Common -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+    <color name="accent"            >#ffe86997</color>
+    <color name="accent_light"      >#ffffc1ce</color>
+	<color name="accent_transparent">#80ff91a5</color>
+	<color name="notice_border"     >#ffd9d900</color>
+	<color name="notice_bkg"        >#e0e6e600</color>
+	<color name="activity_bkg"      >#ffe8e8e8</color>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Text -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<color name="text_accent" >@color/accent</color>
+	<color name="text_darker" >#f8000000</color>
+	<color name="text_dark"   >#b8000000</color>
+	<color name="text_light"  >#80000000</color>
+	<color name="text_lighter">#40000000</color>
+	<color name="text_white"  >#ffdddddd</color>
+	<color name="text_whiter" >#ffffffff</color>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Touch feedback -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<color name="feedback_pressed"      >#11000000</color>
+	<color name="feedback_pressed_white">#11ffffff</color>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Bookmarks -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<color name="bookmark_fill_current"  >@color/accent</color>
+	<color name="bookmark_stroke_current">@color/accent_light</color>
+	<color name="bookmark_text_current"  >#ffffffff</color>
+	
+	<color name="bookmark_fill"  >#f8eeeeee</color>
+	<color name="bookmark_stroke">#ffdddddd</color>
+	<color name="bookmark_text"  >#20000000</color>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Navigation area -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    
+    <color name="bkg_nav">#eeffffff</color>
+	
+	
+	<!-- =================================================================== -->
+    <!-- Grids -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<color name="gridItem_card_label_textColor">#aaaaaa</color>
+	
+	
+	<!-- =================================================================== -->
+    <!-- Lists -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+    <color name="listItem_primary"  >#ff000000</color>
+    <color name="listItem_secondary">#88000000</color>
+    <color name="listItem_tertiary" >#58000000</color>
+    
+    <color name="divider_listItem">#22000000</color>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Action bar -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<color name="actionBar_chapter">#e000</color>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Copied from ProgressButton, because Gradle is horseshit -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<color name="progress_default_circle_color">#80ffffff</color>
+	<color name="progress_default_progress_color">#33b5e5</color>
+    
+</resources>

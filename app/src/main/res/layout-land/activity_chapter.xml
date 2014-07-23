@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/chapter_landscape"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<ListView
+		android:id="@+id/list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clipChildren="false" />
+		
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- Pull shade -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<View
+		android:id="@+id/pullShade_top"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal|top"
+		
+	    android:alpha="0"
+	    
+	    android:background="@drawable/pullshade_top" />
+	
+	<View
+		android:id="@+id/pullShade_bottom"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal|bottom"
+		
+	    android:alpha="0"
+	    
+	    android:background="@drawable/pullshade_bottom" />
+	
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- Pull text -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<TextView
+		android:id="@+id/pullText_top"
+		
+		style="@style/pullText"
+		
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|top"
+		
+		android:alpha="0"
+		
+		android:text="@string/topChapter"/>
+	
+	<TextView
+		android:id="@+id/pullText_bottom"
+		
+		style="@style/pullText"
+		
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|bottom"
+		
+		android:alpha="0"
+		
+		android:text="@string/bottomChapter"/>
+	
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- Pull indicator -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<View
+		android:id="@+id/pullIndicator_top"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/pullIndicator_thickness"
+		android:layout_gravity="center_horizontal|top"
+		
+		android:background="@color/accent"
+		android:scaleX="0" />
+	
+	<View
+		android:id="@+id/pullIndicator_bottom"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/pullIndicator_thickness"
+		android:layout_gravity="center_horizontal|bottom"
+		
+		android:background="@color/accent"
+		android:scaleX="0" />
+	
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- Pull indicator -->
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	
+	<TextView style="@style/pageNumber"
+		android:id="@+id/pageNumber"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|bottom"
+		
+		android:textSize="@dimen/textSize_large"
+		
+		tools:text="6/24"
+		tools:alpha="1" />
+	
+</FrameLayout>
